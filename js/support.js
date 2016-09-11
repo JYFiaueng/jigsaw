@@ -190,28 +190,28 @@ function change(item_n, id){
 	if(x-1 > -1){//上
 		if(gameArr_n[x-1][y].item == t){
 			console.log('上');
-			move(x, y, x-1, y, item_n, id);
+			moveDate(x, y, x-1, y, item_n, id);
 			return;
 		}
 	}
 	if(y+1 < level){//右
 		if(gameArr_n[x][y+1].item == t){
 			console.log('右');
-			move(x, y, x, y+1, item_n, id);
+			moveDate(x, y, x, y+1, item_n, id);
 			return;
 		}
 	}
 	if(x+1 < level){//下
 		if(gameArr_n[x+1][y].item == t){
 			console.log('下');
-			move(x, y, x+1, y, item_n, id);
+			moveDate(x, y, x+1, y, item_n, id);
 			return;
 		}
 	}
 	if(y-1 > -1){//左
 		if(gameArr_n[x][y-1].item == t){
 			console.log('左');
-			move(x, y, x, y-1, item_n, id);
+			moveDate(x, y, x, y-1, item_n, id);
 			return;
 		}
 	}
